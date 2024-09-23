@@ -7,8 +7,9 @@ fun main(){
 
     //actividad5()
     //actividad6()
-    actividad7()
-
+    //actividad7()
+    //actividad8()
+    //actividad9()
 
 }
 
@@ -77,5 +78,56 @@ fun actividad7(){
 fun compareStrings( string1:String, string2:String):Boolean{
 
     return string1.equals(string2)
+
+
+
+}
+
+fun actividad8(){
+
+    val scan = Scanner(System.`in`)
+
+    println("Introduce primer numero: ")
+
+    val number1 = scan.nextInt()
+
+    println("Introduce segundo numero: ")
+
+    val number2 = scan.nextInt()
+
+    println("Introduce tercer numero: ")
+
+    val number3 = scan.nextInt()
+
+    orderNumbers( number1, number2, number3)
+
+}
+
+fun orderNumbers( x:Int, y:Int, z:Int){
+
+    val numbers = arrayOf( x, y, z)
+
+    println("Numeros ordenados: ${numbers.sorted()}")
+
+}
+
+fun actividad9(){
+
+    val averageNumber = averageNumbers( 10f, 10f, 10f)
+
+    println("La media es: ${String.format("%.2f",averageNumber)}")
+
+}
+
+fun averageNumbers( x:Float, y:Float, z:Float):Float{
+
+    val array = arrayOf( x, y, z)
+
+    var result:Float = 0f
+
+    for (number in array) result += number
+
+    return result / array.size
+
 
 }
