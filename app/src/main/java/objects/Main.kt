@@ -15,7 +15,9 @@ fun main(){
 
     var greninja:WaterPokemon = WaterPokemon("Greninja", 95f, 89f, 122)
 
+    var darmanitan:FirePokemon = FirePokemon("Darmanitan", 140f, 100f, 95)
 
+    darmanitan.setFireBallTemperature(200)
 
     pikachu.setAttack(100f)
 
@@ -24,6 +26,8 @@ fun main(){
     println("Nombre: ${flygon.getName()}")
 
     greninja.attackIt()
+
+    darmanitan.attackIt()
 
 
 
