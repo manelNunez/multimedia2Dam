@@ -23,6 +23,8 @@ fun main(){
     println("Nombre: ${golem.getName()}")
     println("Nombre: ${flygon.getName()}")
 
+    greninja.attackIt()
+
 
 
 }

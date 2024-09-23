@@ -37,4 +37,8 @@ open class Pokemon(  private var name:String,  private var attack:Float,
         this.velocity = velocity
     }
 
+    open fun attackIt(){
+        println("Attaking...")
+    }
+
 }

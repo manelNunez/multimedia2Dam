@@ -32,4 +32,8 @@ class WaterPokemon ( name:String, attack:Float, health:Float, velocity:Int):
         this.submergedTime++
     }
 
+    override fun attackIt() {
+        println("Attacking from water")
+    }
+
 }
