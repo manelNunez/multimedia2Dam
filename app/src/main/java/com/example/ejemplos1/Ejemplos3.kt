@@ -1,10 +1,24 @@
 package com.example.ejemplos1
 
+import kotlin.math.abs
+
 fun main(){
 
-    mostrarNombres("Pepe","Maria","Vicent")
+    /*mostrarNombres("Pepe","Maria","Vicent")
     recorrerDias()
-    listarMutables()
+    listarMutables()*/
+
+    var x:Int = -3
+
+    println(x.valorAbsoluto(true))
+
+    println(x.resta(2))
+
+    println( x resta 10)
+
+    println( 8 op 2)
+
+
 }
 
 fun mostrarNombres(vararg nombres:String){
@@ -39,3 +53,28 @@ fun listarMutables (){
     for (dia:String in listasMutables) print("$dia ")
 
 }
+
+//Funciones infix
+
+infix fun Int.valorAbsoluto(valor:Boolean) =
+    if(valor) abs( this ) else this
+
+infix fun Int.resta(num:Int) =
+    this-num
+
+infix fun Int.op (num:Int) =
+    if (num == 1){
+        this + 2
+    }else if (num == 2){
+        this - 2
+    }else if(num == 3){
+        this * 2
+    }else if(num == 4){
+        this / 2
+    }else{
+        this
+    }
+
+
+
+
